@@ -3,6 +3,31 @@
 
   window.onload = function () {
     window.setTimeout(fadeout, 500);
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCeGC6h5nUBgq6v87oSXmd12GO_d4alMaw",
+      authDomain: "coval-website.firebaseapp.com",
+      projectId: "coval-website",
+      storageBucket: "coval-website.appspot.com",
+      messagingSenderId: "383475623491",
+      appId: "1:383475623491:web:a80ae3c831cf552ebd96f6",
+      measurementId: "G-KWJQYLGC2B"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    var form = document.querySelector('.subscribe-form-top');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var email = form.querySelector('input[name="subs-email"]').value;
+      var data = {
+        email: email,
+        subscribed_at: new Date().getTime()
+      };
+
+      db.collection("subscriptions").add(data);
+    });
   };
 
   function fadeout() {

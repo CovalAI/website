@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>SaaSpal - SaaS and Software Landing Page Template</title>
+  <title>Coval.ai - Fix issues faster!</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="assets/css/lineicons.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -87,10 +90,12 @@
             <p class="wow fadeInUp" data-wow-delay=".6s">
               No developer likes fixing support issues. That's why we built the best support platform for developers.
             </p>
-            <a href="javascript:void(0)" class="main-btn border-btn btn-hover wow fadeInUp"
-              data-wow-delay=".6s">Purchase Now</a>
-            <a href="#features" class="scroll-bottom">
-              <i class="lni lni-arrow-down"></i></a>
+            <form class="subscribe-form-top">
+              <input type="email" name="subs-email" id="subs-email-1" placeholder="Your Email" />
+              <button type="submit" class="main-btn btn-hover" id="subscribe-btn-top">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
         <div class="col-lg-6">
@@ -214,8 +219,8 @@
             <div class="section-title mb-15">
               <h2 class="text-white mb-25">Join our waitlist!</h2>
               <p class="text-white pr-5">
-                Join our waitlist today and be the first to access Coval! 
-                You'll get priority access and receive exclusive updates straight 
+                Join our waitlist today and be the first to access Coval!
+                You'll get priority access and receive exclusive updates straight
                 to your inbox.
               </p>
             </div>
@@ -312,6 +317,7 @@
   <!-- ======== JS here ======== -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" type="module"></script>
 </body>
+
 </html>

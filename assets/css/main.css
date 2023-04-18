@@ -2168,3 +2168,44 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
+
+.subscribe-form-top input[type=email] {
+  width: 100%;
+  height: 60px;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.subscribe-form-top button[type=submit] {
+height: 55px;
+    background: #5864FF;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    /* margin-bottom: 20px; */
+    right: 14px;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+.subscribe-form-top button[type=submit]:hover {
+  background: #4962c2;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
